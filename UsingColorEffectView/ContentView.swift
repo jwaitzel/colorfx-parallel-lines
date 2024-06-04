@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var animStart: Date = .now
-    
     var body: some View {
         HStack {
             ForEach(0..<6, id: \.self) { idx in
@@ -29,9 +28,22 @@ struct ContentView: View {
                             .float(0.15 + Float(idx) * 0.0124)
                         ))
                         .shadow(color: .black, radius: 1.1, x: 0, y: 0)
+//                        .scaleEffect(4)
                 }
             }
         }
+        
+        .overlay(alignment: .bottom) {
+            Button {
+                
+            } label: {
+                Text("BOTTOM")
+            }
+            .alignmentGuide(.bottom) { d in
+                d[.top]
+            }
+        }
+        .clipShape(Rectangle())
     }
 }
 
