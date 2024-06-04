@@ -1,4 +1,4 @@
 SwiftUI new ColorEffect iOS 17: Stitchable shader animated lines
 <40 lines animated shader 
 
-[ui]: https://raw.githubusercontent.com/jwaitzel/colorfx-parallel-lines/main/shader-gif-2.gif "UI"
+![UI](https://raw.githubusercontent.com/jwaitzel/colorfx-parallel-lines/main/shader-gif-2.gif)
